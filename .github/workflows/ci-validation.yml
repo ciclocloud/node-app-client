@@ -13,3 +13,6 @@ jobs:
     uses: ciclocloud/central-templates/.github/workflows/reusable-pipeline.yml@main
     with:
       should_push: false # Requisito I1: Construir sin publicar
+    secrets:
+      DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
+  
